@@ -17,7 +17,7 @@ def setup
 end
 
 def test_add_person_to_queue
-  @bus_stop.add_passenger(@passenger1)
+  @bus_stop.add_passenger_to_queue(@passenger1)
   assert_equal(1, @bus_stop.count_passengers)
 end
 

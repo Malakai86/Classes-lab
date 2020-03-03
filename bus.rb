@@ -26,4 +26,10 @@ attr_reader :route_number
     @passengers = []
   end
 
+  def pick_up_from_stop(stop)
+    for person in stop
+      @passengers.push(person)
+    end
+  end
+
 end
