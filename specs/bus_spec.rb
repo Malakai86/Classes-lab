@@ -13,8 +13,6 @@ class BusTest < MiniTest::Test
     @passenger2 = Person.new("Jill", 67)
     @passenger3 = Person.new("Jane", 40)
 
-    @passengers = [@person1,@person2, @person3]
-
   end
 
 def test_route_number()
@@ -25,5 +23,8 @@ def test_drive()
   assert_equal("Brum brum", @bus.drive)
 end
 
+def test_count_total_passengers
+  assert_equal(0, @bus.total_passengers)
+end
 
 end

@@ -9,4 +9,8 @@ attr_reader :route_number
   def drive()
     return "Brum brum"
   end
+
+  def total_passengers()
+    return @passengers.length
+  end
 end
