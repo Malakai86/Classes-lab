@@ -16,9 +16,14 @@ attr_reader :route_number
 
   def add_passenger(passenger)
     @passengers.push(passenger)
-end
+  end
 
-def remove_passenger(passenger)
-  @passengers.delete(passenger)
-end
+  def remove_passenger(passenger)
+    @passengers.delete(passenger)
+  end
+
+  def empty_bus()
+    @passengers = []
+  end
+
 end
