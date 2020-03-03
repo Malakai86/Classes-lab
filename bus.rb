@@ -14,7 +14,11 @@ attr_reader :route_number
     return @passengers.length
   end
 
-  def add_passengers(passenger)
+  def add_passenger(passenger)
     @passengers.push(passenger)
+end
+
+def remove_passenger(passenger)
+  @passengers.delete(passenger)
 end
 end

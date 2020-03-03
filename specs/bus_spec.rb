@@ -28,8 +28,14 @@ def test_count_total_passengers
 end
 
 def test_add_passengers
-  @bus.add_passengers(@passenger2)
+  @bus.add_passenger(@passenger2)
   assert_equal(1, @bus.total_passengers)
 end
+ def test_remove_passenger()
+   @bus.add_passenger(@passenger1)
+   @bus.add_passenger(@passenger2)
+   @bus.remove_passenger(@passenger2)
+   assert_equal(1, @bus.total_passengers)
 
 end
+ end
