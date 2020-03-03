@@ -27,4 +27,9 @@ def test_count_total_passengers
   assert_equal(0, @bus.total_passengers)
 end
 
+def test_add_passengers
+  @bus.add_passengers(@passenger2)
+  assert_equal(1, @bus.total_passengers)
+end
+
 end
